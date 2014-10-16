@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+        <RelativeLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="1dp"
+            android:background="#2980b9"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_launcher" 
+                android:contentDescription="@string/hello_world"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="Helvetica Light"
+                android:gravity="center"
+                android:text="@string/my_bags"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textColorLink="#ffffff"
+                android:textSize="28sp" />
+
+        </RelativeLayout>
+    
+    <LinearLayout android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="140dip"
+        android:background="#ecf0f1"
+        android:layout_below="@+id/bar"
+        android:id="@+id/doubleButton">
+                    
+        <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#c0392b"
+        >
+        
+    <ImageButton
+        android:id="@+id/show_map"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:contentDescription="@string/show_map"
+        android:fontFamily="Helvetica Light"
+        android:scaleType="centerCrop"
+        android:shadowRadius="0"
+        android:src="@drawable/mapicon"
+        android:text="@string/show_map"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="#1abc9c" >
+
+	<ImageButton
+	    android:id="@+id/add_item"
+	    android:layout_width="80dip"
+	    android:layout_height="80dip"
+	    android:layout_centerInParent="true"
+	    android:layout_gravity="center"
+	    android:background="@null"
+	    android:contentDescription="@string/show_map"
+	    android:scaleType="centerCrop"
+	    android:shadowRadius="0"
+	    android:src="@drawable/plusicon"
+	    android:textColor="#ffffff"
+	    android:textStyle="normal" />
+
+	</RelativeLayout>
+	</LinearLayout>
+	
+	<fragment
+	    android:name="com.example.luguaggetracker.ItemList"
+	    android:id="@+id/list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/doubleButton"
+	    android:layout_marginTop="1dp" />
+	
+	<ImageView
+	    android:layout_width="140dp"
+	    android:layout_height="140dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="false"
+	    android:layout_alignParentRight="false"
+	    android:layout_alignParentTop="false"
+	    android:layout_centerHorizontal="true"
+	    android:contentDescription="@string/show_map"
+	    android:src="@drawable/copyright" />
+
+</RelativeLayout>

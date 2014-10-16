@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="70dp"
+  android:background="@color/notepad_paper"
+  >
+  
+  <com.example.luguaggetracker.MenuListItemView
+      android:id="@+id/name"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_centerHorizontal="false"
+      android:layout_centerInParent="false"
+      android:layout_centerVertical="false"
+      android:layout_marginTop="12dp"
+      android:fadingEdge="vertical"
+      android:fontFamily="Helvetica Light"
+      android:gravity="top"
+      android:paddingLeft="30dp"
+      android:scrollbars="vertical"
+      android:text="@string/hello_world"
+      android:textColor="@color/notepad_text"
+      android:textSize="20sp" />
+  
+  <CheckBox
+      android:id="@+id/checkbox_track"
+      android:layout_width="40dp"
+      android:layout_height="35dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="17dp"
+      android:background="@layout/checkbox"
+      android:button="@null"
+      android:focusable="false"
+      android:gravity="center"
+      android:padding="15dp" />
+  
+  <View 
+      android:id="@+id/editView"
+      android:layout_alignParentRight="true"
+      android:layout_width="70dp"
+      android:layout_height="match_parent"
+      android:background="#2c3e50"
+      />
+  
+  <ImageView
+      android:layout_width="35dp"
+      android:layout_height="35dp"
+      android:layout_alignParentRight="true"
+      android:layout_centerHorizontal="false"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="15dp"
+      android:gravity="center"
+      android:src="@drawable/pen" 
+      android:contentDescription="@string/hello_world"
+      />
+  
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="20dp"
+        android:fadingEdge="vertical"
+        android:fontFamily="Helvetica Light"
+        android:gravity="center"
+        android:padding="15dp"
+        android:scrollbars="vertical"
+        android:text="@string/hello_world"
+        android:textColor="#ffffff" />
+    
+    <ImageView
+        android:id="@+id/lost"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/editView"
+        android:fontFamily="Helvetica Light"
+        android:padding="15dp"
+        android:scrollbars="vertical"
+        android:src="@drawable/warning"
+        android:text=""
+        android:textColor="#ffffff" 
+        android:contentDescription="@string/hello_world"
+        />
+  
+</RelativeLayout>

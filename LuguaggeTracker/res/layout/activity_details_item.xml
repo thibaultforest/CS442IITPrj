@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsItem" 
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+    
+    <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:background="#2980b9">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="Helvetica Light"
+            android:gravity="center"
+            android:text="@string/title_activity_bag_details"
+            android:textColorHint="#ffffff"
+            android:textColorLink="#ffffff"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/btnCapture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/bag_image_description"
+            android:src="@drawable/apn" />
+    
+    </LinearLayout>
+    
+	<LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editBagName"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape"
+            android:ems="15"
+            android:hint="@string/hint_bag_name"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textSize="20sp" />
+       </LinearLayout>
+	
+	<LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape"
+            android:ems="20"
+            android:focusable="false"
+            android:hint="@string/hint_description"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textSize="20sp" />
+
+ 	</LinearLayout>
+	  
+	<FrameLayout 
+	             android:id="@+id/root"
+	             android:layout_width="match_parent"
+	             android:layout_height="0dp"
+	             android:layout_weight="1">
+	
+		  <com.example.luguaggetracker.DistanceBackgroundView
+		      android:id="@+id/sonar"
+		      android:layout_width="match_parent"
+		      android:layout_height="fill_parent"/>
+		
+		  <ImageView
+		      android:id="@+id/dot"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:layout_gravity="center_horizontal|top"
+		      android:visibility="gone"
+		      android:src="@drawable/dot" 
+		      android:contentDescription="@string/hello_world"
+		      />
+	
+	</FrameLayout>
+	
+	<LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom">
+
+    <Button
+        android:id="@+id/delete"
+        style="@style/btnStyleShakespeare"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:background="#e74c3c"
+        android:fontFamily="Helvetica Light"
+        android:shadowRadius="0"
+        android:text="@string/button_delete"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+    
+     <Button
+         android:id="@+id/save"
+         style="@style/btnStyleShakespeare"
+         android:layout_width="0dp"
+         android:layout_height="70dp"
+         android:layout_weight="1"
+         android:background="#27ae60"
+         android:fontFamily="Helvetica Light"
+         android:shadowRadius="0"
+         android:text="@string/button_save"
+         android:textColor="#ffffff"
+         android:textSize="20sp"
+         android:textStyle="normal" />
+    
+    </LinearLayout>
+
+</LinearLayout>
